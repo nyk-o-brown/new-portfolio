@@ -12,7 +12,7 @@ const projects = [
     live: null,
     accent: "cyan",
     images: [
-      "/projects/carecraft-1.png",
+      "/public/",
       "/projects/carecraft-2.png",
       "/projects/carecraft-3.png",
     ],
