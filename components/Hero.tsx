@@ -64,6 +64,18 @@ export default function Hero() {
             >
               GET IN TOUCH
             </a>
+            <a
+              href="/brown-nyakako-cv.pdf"
+              download="Brown Nyakako - CV.pdf"
+              className="px-6 py-3 border border-neutral-600 text-neutral-300 font-mono text-sm rounded-lg hover:border-cyan-500/50 hover:text-cyan-400 transition-colors flex items-center gap-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              DOWNLOAD CV
+            </a>
           </div>
         </motion.div>
 
