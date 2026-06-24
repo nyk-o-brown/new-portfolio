@@ -18,7 +18,7 @@ const projects = [
     ],
   },
   {
-    title: "PROPERTY MANAGER",
+    title: "PROPERTY MANAGER LIXNET",
     description:
       "Full-featured property management app built for Lixnet Technologies. Handles tenant tracking, unit management, and payments — built with field research straight from the landlords and tenants who use it.",
     tech: ["React", "PHP", "MySQL", "Tailwind"],
@@ -46,7 +46,7 @@ const projects = [
     ],
   },
   {
-    title: "DIGI-MARKET",
+    title: "CADVISOR",
     description:
       "Digitized procurement and purchasing app that streamlines business operations. Turns chaotic spreadsheet workflows into clean, fast UI. Management loves it. Accountants slightly less so.",
     tech: ["React", "Node.js", "PostgreSQL", "Tailwind"],
