@@ -3,11 +3,27 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const experiences = [
-  {
+   {
     num: "01",
     role: "Team Lead / Full Stack Developer",
+    company: "Nile Flow",
+    period: "Jan 2025 – Present",
+    location: "Nairobi, Kenya",
+    points: [
+    "Headed software development at Nile Flow, leading end-to-end design and implementation of core platforms.",
+
+    "Built a supplier dashboard that streamlined onboarding and engagement, driving growth in supplier participation.",
+
+    "Developed a rider dashboard to assign drivers efficiently and track deliveries in real time, improving operational reliability.",
+
+    "Created an admin dashboard leveraging data science to generate actionable insights, supporting strategic business decisions and contributing to Nile Flow securing pre-seed funding from Riara University.",
+    ],
+  },
+  {
+    num: "02",
+    role: "Team Lead / Full Stack Developer",
     company: "Lixnet Technologies",
-    period: "Sep 2025 – Present",
+    period: "Sep 2025 – Jan 2026",
     location: "Nairobi, Kenya",
     points: [
       "Promoted from Intern to Team Lead as the company prepares to go public; platform currently in testing phase.",
@@ -17,7 +33,7 @@ const experiences = [
     ],
   },
   {
-    num: "02",
+    num: "03",
     role: "Founder & Full Stack Developer",
     company: "Egress Hall",
     period: "Jun 2025 – Present",
@@ -31,7 +47,7 @@ const experiences = [
     ],
   },
   {
-    num: "03",
+    num: "04",
     role: "Contracted Full Stack Developer",
     company: "Crisiz Web Development Services",
     period: "Jan 2025 – Present",
@@ -43,7 +59,7 @@ const experiences = [
     ],
   },
   {
-    num: "04",
+    num: "05",
     role: "Frontend Developer",
     company: "Debogen Consulting",
     period: "Jan 2025 – May 2025",
@@ -55,7 +71,7 @@ const experiences = [
     ],
   },
   {
-    num: "05",
+    num: "06",
     role: "Hackathon Winner — Team Lead",
     company: "Jagedo & Moringa Hackathon",
     period: "2025",
@@ -67,7 +83,7 @@ const experiences = [
     ],
   },
   {
-    num: "06",
+    num: "07",
     role: "Bachelor of Science — Business & Information Technology",
     company: "Riara University",
     period: "Ongoing",
