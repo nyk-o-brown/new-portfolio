@@ -23,14 +23,14 @@ const skills = [
   },
   {
     id: "blockchain",
-    icon: "🔗",
-    label: "Blockchain",
+    icon: "⛓",
+    label: "Data Engineering",
     tooltip: "Exploring Web3 and smart contracts. Still figuring out if it's the future or just vibes.",
   },
   {
     id: "tutorial",
-    icon: "🎓",
-    label: "Teaching",
+    icon: "📚",
+    label: "Machine Learning",
     tooltip: "Breaking down complex concepts until even I understand them. That's the real test.",
   },
 ];

@@ -8,7 +8,7 @@ const references = [
     referee: "[ Florence Kimani ]",
     title: "[ Faculty of School of Computing and Informatics ]",
     excerpt:
-      "[ During his studies, Brown consistently demonstrated an exceptional ability to apply software engineering, data analysis, and business strategy to solve complex, real-world organizational challenges. ]",
+      "During his studies, Brown consistently demonstrated an exceptional ability to apply software engineering, data analysis, and business strategy to solve complex, real-world organizational challenges.",
     letterUrl: null,
     icon: "🎓",
     color: "from-cyan-500/10 to-transparent",
@@ -21,7 +21,7 @@ const references = [
     referee: "[ Victor  ]",
     title: "[ CTO]",
     excerpt:
-      "[ Brown was instrumental in co-developing our comprehensive Property Manager application using React, PHP, and MySQL, where he effectively structured the underlying databases and built out seamless UI modules for critical tasks like maintenance requests and payments. ]",
+      "Brown was instrumental in co-developing our comprehensive Property Manager application using React, PHP, and MySQL, where he effectively structured the underlying databases and built out seamless UI modules for critical tasks like maintenance requests and payments.",
     letterUrl: null,
     icon: "💼",
     color: "from-violet-500/10 to-transparent",
@@ -34,7 +34,7 @@ const references = [
     referee: "[ Chris  Otieno ]",
     title: "[ CEO/owner ]",
     excerpt:
-      "[ Throughout his time with us, Brown has been entrusted with delivering multiple high-quality websites, consistently producing modern and user-friendly designs that exceed expectations. His back-end integration skills are outstanding. ]",
+      "Throughout his time with us, Brown has been entrusted with delivering multiple high-quality websites, consistently producing modern and user-friendly designs that exceed expectations. His back-end integration skills are outstanding.",
     letterUrl: null,
     icon: "🌐",
     color: "from-emerald-500/10 to-transparent",
