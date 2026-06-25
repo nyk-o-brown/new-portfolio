@@ -5,16 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 const experiences = [
    {
     num: "01",
-    role: "Team Lead / Full Stack Developer",
+    role: "Software Development Lead / Full Stack Developer",
     company: "Nile Flow",
-    period: "Jan 2025 – Present",
+    period: "Jan 2026 – Present",
     location: "Nairobi, Kenya",
     points: [
-    "Headed software development at Nile Flow, leading end-to-end design and implementation of core platforms.",
+    "Headed software development at Nile Flow, leading end-to-end design and implementation of core platforms and intergration into the play-store.",
 
     "Built a supplier dashboard that streamlined onboarding and engagement, driving growth in supplier participation.",
 
-    "Developed a rider dashboard to assign drivers efficiently and track deliveries in real time, improving operational reliability.",
+    "Developed a rider dashboard to assign drivers efficiently and track deliveries in real time, improving operational reliability .",
 
     "Created an admin dashboard leveraging data science to generate actionable insights, supporting strategic business decisions and contributing to Nile Flow securing pre-seed funding from Riara University.",
     ],
