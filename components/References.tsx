@@ -5,10 +5,10 @@ const references = [
   {
     org: "Riara University",
     orgType: "Academic",
-    referee: "[ Referee Name ]",
-    title: "[ Title / Department ]",
+    referee: "[ Florence Kimani ]",
+    title: "[ Faculty of School of Computing and Informatics ]",
     excerpt:
-      "[ Add a short quote or highlight from the reference letter here - e.g. Brown consistently demonstrated... ]",
+      "[ During his studies, Brown consistently demonstrated an exceptional ability to apply software engineering, data analysis, and business strategy to solve complex, real-world organizational challenges. ]",
     letterUrl: null,
     icon: "🎓",
     color: "from-cyan-500/10 to-transparent",
@@ -18,10 +18,10 @@ const references = [
   {
     org: "Lixnet Technologies",
     orgType: "Professional",
-    referee: "[ Referee Name ]",
-    title: "[ Title / Position ]",
+    referee: "[ Victor  ]",
+    title: "[ CTO]",
     excerpt:
-      "[ Add a short quote or highlight from the reference letter here - e.g. As Team Lead, Brown led the team to... ]",
+      "[ Brown was instrumental in co-developing our comprehensive Property Manager application using React, PHP, and MySQL, where he effectively structured the underlying databases and built out seamless UI modules for critical tasks like maintenance requests and payments. ]",
     letterUrl: null,
     icon: "💼",
     color: "from-violet-500/10 to-transparent",
@@ -31,10 +31,10 @@ const references = [
   {
     org: "Crisiz Web Development Services",
     orgType: "Professional",
-    referee: "[ Referee Name ]",
-    title: "[ Title / Position ]",
+    referee: "[ Chris  Otieno ]",
+    title: "[ CEO/owner ]",
     excerpt:
-      "[ Add a short quote or highlight from the reference letter here - e.g. Brown delivered every project on time... ]",
+      "[ Throughout his time with us, Brown has been entrusted with delivering multiple high-quality websites, consistently producing modern and user-friendly designs that exceed expectations. His back-end integration skills are outstanding. ]",
     letterUrl: null,
     icon: "🌐",
     color: "from-emerald-500/10 to-transparent",
