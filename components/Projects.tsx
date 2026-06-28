@@ -18,7 +18,7 @@ const projects = [
     ],
   },
   {
-    title: "PROPERTY MANAGER LIXNET",
+    title: " EVOLVE PROPERTY MANAGER ",
     description:
       "Full-featured property management app built for Lixnet Technologies. Handles tenant tracking, unit management, and payments — built with field research straight from the landlords and tenants who use it.",
     tech: ["React", "PHP", "MySQL", "Tailwind"],
@@ -32,11 +32,11 @@ const projects = [
     ],
   },
   {
-    title: "EDU AI",
+    title: "TANGAZA",
     description:
       "An AI-driven application that creates personalized virtual tutors. Think of it as a teacher who actually adapts to how you learn — unlike the ones who just read off slides.",
     tech: ["Next.js", "TypeScript", "OpenAI", "Firebase"],
-    github: "https://github.com/nyk-o-brown",
+    github: "https://github.com/nyk-o-brown/tangaza/blob/main/README.md",
     live: null,
     accent: "violet",
     images: [
@@ -48,9 +48,9 @@ const projects = [
   {
     title: "CADVISOR",
     description:
-      "Digitized procurement and purchasing app that streamlines business operations. Turns chaotic spreadsheet workflows into clean, fast UI. Management loves it. Accountants slightly less so.",
+      "A comprehensive business intelligence tool that provides actionable insights through data visualization and analytics.",
     tech: ["React", "Node.js", "PostgreSQL", "Tailwind"],
-    github: "https://github.com/nyk-o-brown",
+    github: "https://github.com/nyk-o-brown/cadvisor",
     live: null,
     accent: "orange",
     images: [
