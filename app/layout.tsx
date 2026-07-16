@@ -12,10 +12,30 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
 });
 
+const title = "Brown Nyakako — Full Stack Developer";
+const description =
+  "Full Stack Web & Mobile Developer based in Nairobi, Kenya. Building things that actually work.";
+const siteUrl = "https://brownodoyo.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Brown Nyakako — Full Stack Developer",
-  description:
-    "Full Stack Web & Mobile Developer based in Nairobi, Kenya. Building things that actually work.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: siteUrl,
+    siteName: "Brown Nyakako",
+    images: [{ url: "/headshot.jpg", width: 800, height: 800, alt: title }],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+    images: ["/headshot.jpg"],
+  },
 };
 
 export default function RootLayout({

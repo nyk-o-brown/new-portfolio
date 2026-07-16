@@ -7,7 +7,6 @@ const links = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
-  { label: "References", href: "#references" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -44,7 +43,7 @@ export default function Nav() {
         </a>
       ))}
       <a
-        href="/cv.pdf"
+        href="/brown-nyakako-cv.pdf"
         target="_blank"
         rel="noreferrer"
         className="ml-2 px-3 py-1 text-sm font-mono bg-cyan-500 text-black rounded-full font-semibold hover:bg-cyan-400 transition-colors"

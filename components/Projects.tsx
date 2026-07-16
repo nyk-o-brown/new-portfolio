@@ -12,13 +12,13 @@ const projects = [
     live: null,
     accent: "cyan",
     images: [
-      "/public/",
+      "/carecraft_sh_1.png",
       "/projects/carecraft-2.png",
       "/projects/carecraft-3.png",
     ],
   },
   {
-    title: " EVOLVE PROPERTY MANAGER ",
+    title: "EVOLVE PROPERTY MANAGER",
     description:
       "Full-featured property management app built for Lixnet Technologies. Handles tenant tracking, unit management, and payments — built with field research straight from the landlords and tenants who use it.",
     tech: ["React", "PHP", "MySQL", "Tailwind"],
@@ -40,9 +40,9 @@ const projects = [
     live: null,
     accent: "violet",
     images: [
-      "/projects/eduai-1.png",
-      "/projects/eduai-2.png",
-      "/projects/eduai-3.png",
+      "/projects/tangaza-1.png",
+      "/projects/tangaza-2.png",
+      "/projects/tangaza-3.png",
     ],
   },
   {
@@ -54,9 +54,9 @@ const projects = [
     live: null,
     accent: "orange",
     images: [
-      "/projects/digimarket-1.png",
-      "/projects/digimarket-2.png",
-      "/projects/digimarket-3.png",
+      "/projects/cadvisor-1.png",
+      "/projects/cadvisor-2.png",
+      "/projects/cadvisor-3.png",
     ],
   },
 ];
