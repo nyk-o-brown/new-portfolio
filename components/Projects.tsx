@@ -11,11 +11,7 @@ const projects = [
     github: "https://github.com/nyk-o-brown",
     live: null,
     accent: "cyan",
-    images: [
-      "/carecraft_sh_1.png",
-      "/projects/carecraft-2.png",
-      "/projects/carecraft-3.png",
-    ],
+    images: ["/carecraft1.png", "/carecraft2.png", "/carecraft3.png"],
   },
   {
     title: "EVOLVE PROPERTY MANAGER",
@@ -25,11 +21,7 @@ const projects = [
     github: "https://github.com/nyk-o-brown",
     live: null,
     accent: "emerald",
-    images: [
-      "/projects/property-1.png",
-      "/projects/property-2.png",
-      "/projects/property-3.png",
-    ],
+    images: ["/evolvepm1.png", "/evolvepm2.png", "/evolvepm3.png"],
   },
   {
     title: "TANGAZA",
@@ -39,11 +31,7 @@ const projects = [
     github: "https://github.com/nyk-o-brown/tangaza/blob/main/README.md",
     live: null,
     accent: "violet",
-    images: [
-      "/projects/tangaza-1.png",
-      "/projects/tangaza-2.png",
-      "/projects/tangaza-3.png",
-    ],
+    images: ["/tangaza1.png", "/tangaza2.png", "/tangaza3.png"],
   },
   {
     title: "CADVISOR",
@@ -53,11 +41,7 @@ const projects = [
     github: "https://github.com/nyk-o-brown/cadvisor",
     live: null,
     accent: "orange",
-    images: [
-      "/projects/cadvisor-1.png",
-      "/projects/cadvisor-2.png",
-      "/projects/cadvisor-3.png",
-    ],
+    images: ["/cadvisor1.png", "/cadvisor2.png", "/cadvisor3.png"],
   },
 ];
 
