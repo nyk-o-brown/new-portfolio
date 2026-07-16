@@ -86,7 +86,7 @@ const experiences = [
     num: "07",
     role: "Bachelor of Science — Business & Information Technology",
     company: "Riara University",
-    period: "Ongoing",
+    period: ".",
     location: "Nairobi, Kenya",
     points: [
       "Full stack development, data analysis, business strategy, and machine learning applied to real-world challenges.",
