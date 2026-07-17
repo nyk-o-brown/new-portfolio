@@ -19,10 +19,10 @@ type CaseStudy = {
 const caseStudies: CaseStudy[] = [
   {
     id: "01",
-    project: "[ Project name ]",
-    title: "[ One-line framing of the design problem ]",
+    project: "Evolve Property Manager",
+    title: "Onboarding properties that already had years of paper trail",
     summary:
-      "[ 1-2 sentence teaser on what the challenge was and why it mattered ]",
+      "Property managers switching to Evolve already had tenant, unit, and lease records buried in PDFs. We used PDF reading and generation to slot the app into already-running properties without forcing a manual re-entry nightmare.",
     accent: "cyan",
     problem: "[ Describe the actual problem, requirements, and scale ]",
     constraints: [
@@ -40,10 +40,10 @@ const caseStudies: CaseStudy[] = [
   },
   {
     id: "02",
-    project: "[ Project name ]",
-    title: "[ One-line framing of the design problem ]",
+    project: "Cadvisor",
+    title: "Turning AI insight into dashboard modules, not just advice",
     summary:
-      "[ 1-2 sentence teaser on what the challenge was and why it mattered ]",
+      "Cadvisor uses AI and business intelligence to suggest good business practices for a company — then goes a step further and auto-generates the dashboard modules needed to act on that advice.",
     accent: "violet",
     problem: "[ Describe the actual problem, requirements, and scale ]",
     constraints: [
@@ -61,10 +61,10 @@ const caseStudies: CaseStudy[] = [
   },
   {
     id: "03",
-    project: "[ Project name ]",
-    title: "[ One-line framing of the design problem ]",
+    project: "Echo",
+    title: "Matching people on weighted principles, not generic filters",
     summary:
-      "[ 1-2 sentence teaser on what the challenge was and why it mattered ]",
+      "Echo pulls matching principles from academic research and applies them as weights across user profiles, connecting people to their best-fit match instead of relying on generic filter-based search.",
     accent: "amber",
     problem: "[ Describe the actual problem, requirements, and scale ]",
     constraints: [
