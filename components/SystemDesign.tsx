@@ -24,19 +24,32 @@ const caseStudies: CaseStudy[] = [
     summary:
       "Property managers switching to Evolve already had tenant, unit, and lease records buried in PDFs. We used PDF reading and generation to slot the app into already-running properties without forcing a manual re-entry nightmare.",
     accent: "cyan",
-    problem: "[ Describe the actual problem, requirements, and scale ]",
+    problem:
+      "Property managers switching to Evolve already had years of tenant, unit, and lease records — but that data lived in scattered PDFs from whatever process they'd used before, not in a clean database. Re-entering it all manually before go-live would have killed adoption before it started.",
     constraints: [
-      "[ Constraint 1 — e.g. time, budget, team size, existing stack ]",
-      "[ Constraint 2 ]",
-      "[ Constraint 3 ]",
+      "No two managers' PDFs followed the same layout — lease agreements, ledgers, and inspection reports varied wildly",
+      "Properties had to keep operating during the switch — no big-bang cutover window",
+      "Small team and tight timeline, no budget for a dedicated data-migration effort",
+      "Some source PDFs were scanned or photographed, not digitally generated, so clean text extraction wasn't guaranteed",
     ],
     options: [
-      { name: "[ Option A considered ]", verdict: "[ why rejected/chosen ]" },
-      { name: "[ Option B considered ]", verdict: "[ why rejected/chosen ]" },
+      {
+        name: "Manual spreadsheet import",
+        verdict:
+          "Rejected — too much friction for an already-running property to switch onto Evolve, high error rate, kills adoption",
+      },
+      {
+        name: "Fully generic OCR pipeline for any PDF layout",
+        verdict:
+          "Rejected — too ambitious for the timeline given how inconsistent the formats were, would need heavy ML investment and still be unreliable",
+      },
     ],
-    decision: "[ What you actually built and why it won ]",
-    tradeoff: "[ What you gave up by choosing this — be specific and honest ]",
-    result: "[ Outcome, metric, or what you'd change with hindsight ]",
+    decision:
+      "Built a PDF ingestion pipeline that extracts the fields property managers actually needed first — tenant name, unit, rent amount, lease dates — and pre-fills the onboarding form for a human to confirm or correct, rather than trying to capture every clause automatically. Paired it with PDF generation so the same structured data could be exported back out as clean statements and reports.",
+    tradeoff:
+      "Extraction isn't fully automatic — messier or scanned PDFs still need manual correction, so it's an assist rather than a replacement for data entry. Field coverage is deliberately narrow to the core tenant/unit/lease data, so anything property-specific outside that still gets entered by hand.",
+    result:
+      "Cut onboarding time for existing properties well below a blank-slate re-entry approach, and gave managers and tenants confidence early since the platform was validated with on-site field research. Next step would be handling lower-quality scanned PDFs more reliably.",
   },
   {
     id: "02",
@@ -45,19 +58,32 @@ const caseStudies: CaseStudy[] = [
     summary:
       "Cadvisor uses AI and business intelligence to suggest good business practices for a company — then goes a step further and auto-generates the dashboard modules needed to act on that advice.",
     accent: "violet",
-    problem: "[ Describe the actual problem, requirements, and scale ]",
+    problem:
+      "Cadvisor needed to go beyond static charts and actually tell business owners what to do next — then let them act on it without waiting on a developer to hand-build a new dashboard module for every new insight.",
     constraints: [
-      "[ Constraint 1 ]",
-      "[ Constraint 2 ]",
-      "[ Constraint 3 ]",
+      "Businesses on Cadvisor have very different data shapes and metrics that matter to them — no single fixed dashboard fits everyone",
+      "Recommendations had to be tied to real patterns in the data, not generic-sounding advice — false confidence is worse than no advice",
+      "Small team, so new module types needed to be addable without a full dev cycle every time",
+      "Dashboard had to stay fast and uncluttered even as modules got added dynamically",
     ],
     options: [
-      { name: "[ Option A considered ]", verdict: "[ why rejected/chosen ]" },
-      { name: "[ Option B considered ]", verdict: "[ why rejected/chosen ]" },
+      {
+        name: "Fixed dashboard, same modules for every business",
+        verdict:
+          "Rejected — undercuts the 'actionable insight' pitch; owners ignore modules that don't reflect their actual business",
+      },
+      {
+        name: "Free-form AI chat advice with no dashboard integration",
+        verdict:
+          "Rejected — advice that isn't backed by a visual that updates is easy to read once and forget",
+      },
     ],
-    decision: "[ What you actually built and why it won ]",
-    tradeoff: "[ What you gave up by choosing this — be specific and honest ]",
-    result: "[ Outcome, metric, or what you'd change with hindsight ]",
+    decision:
+      "Built an AI layer that scores incoming business data against a library of known patterns (revenue trend, churn risk, inventory turnover, etc.). When a pattern crosses a meaningful threshold, it instantiates the matching module directly onto the user's dashboard with the recommendation attached — not just a text tip.",
+    tradeoff:
+      "Because modules come from a template library rather than being fully open-ended, unusual business situations sometimes get mapped to the closest-fitting template instead of a bespoke visualization — a deliberate trade of some flexibility for reliability.",
+    result:
+      "Business owners get modules that reflect what's actually happening in their numbers instead of a generic dashboard, and can act on a recommendation immediately instead of filing a feature request.",
   },
   {
     id: "03",
@@ -66,19 +92,32 @@ const caseStudies: CaseStudy[] = [
     summary:
       "Echo pulls matching principles from academic research and applies them as weights across user profiles, connecting people to their best-fit match instead of relying on generic filter-based search.",
     accent: "amber",
-    problem: "[ Describe the actual problem, requirements, and scale ]",
+    problem:
+      "Most matching systems lean on simple filters — shared interests, location, age range — which produce plenty of technically-compatible pairs that don't actually work well together. Echo set out to apply real compatibility research instead of ad hoc checkboxes.",
     constraints: [
-      "[ Constraint 1 ]",
-      "[ Constraint 2 ]",
-      "[ Constraint 3 ]",
+      "No large proprietary interaction dataset to train a model from, this early on",
+      "Needed to stay explainable enough to reason about and tune match quality, not a black box",
+      "Matching needed to stay responsive as the user base grows",
+      "Had to translate qualitative findings from an academic compatibility paper into something quantifiable",
     ],
     options: [
-      { name: "[ Option A considered ]", verdict: "[ why rejected/chosen ]" },
-      { name: "[ Option B considered ]", verdict: "[ why rejected/chosen ]" },
+      {
+        name: "Black-box ML model trained on user interaction data",
+        verdict:
+          "Rejected — no meaningful interaction dataset existed yet at this stage to train on",
+      },
+      {
+        name: "Naive filter with equal weighting across all attributes",
+        verdict:
+          "Rejected — treats every trait as equally important, which contradicts what the research actually says predicts compatibility",
+      },
     ],
-    decision: "[ What you actually built and why it won ]",
-    tradeoff: "[ What you gave up by choosing this — be specific and honest ]",
-    result: "[ Outcome, metric, or what you'd change with hindsight ]",
+    decision:
+      "Built a weighted compatibility scoring engine — each dimension is assigned a weight informed by the reference paper's findings on what predicts compatibility, and pairwise scores are computed and ranked to surface the closest matches instead of a flat filter list.",
+    tradeoff:
+      "The weights are only as good as the research behind them — they reflect one study's population and may not generalize perfectly to Echo's actual users, so the model still needs real usage data to validate and retune over time.",
+    result:
+      "Matches feel more considered than a filter list, though the system is early — the next step is using real outcome data (do matched users stay connected?) to validate and adjust the paper-derived weights.",
   },
 ];
 
