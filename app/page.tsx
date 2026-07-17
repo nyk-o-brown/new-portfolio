@@ -6,6 +6,7 @@ import SkillIcons from "@/components/SkillIcons";
 import Certifications from "@/components/Certifications";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import SystemDesign from "@/components/SystemDesign";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Certifications />
         <Experience />
         <Projects />
+        <SystemDesign />
         <Contact />
       </main>
       <Footer />
