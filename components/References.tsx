@@ -15,32 +15,6 @@ const references = [
     border: "hover:border-cyan-500/40",
     tag: "border-cyan-500/20 text-cyan-400",
   },
-  {
-    org: "Lixnet Technologies",
-    orgType: "Professional",
-    referee: "[ Victor  ]",
-    title: "[ CTO]",
-    excerpt:
-      "Brown was instrumental in co-developing our comprehensive Property Manager application using React, PHP, and MySQL, where he effectively structured the underlying databases and built out seamless UI modules for critical tasks like maintenance requests and payments.",
-    letterUrl: null,
-    icon: "💼",
-    color: "from-violet-500/10 to-transparent",
-    border: "hover:border-violet-500/40",
-    tag: "border-violet-500/20 text-violet-400",
-  },
-  {
-    org: "Crisiz Web Development Services",
-    orgType: "Professional",
-    referee: "[ Chris  Otieno ]",
-    title: "[ CEO/owner ]",
-    excerpt:
-      "Throughout his time with us, Brown has been entrusted with delivering multiple high-quality websites, consistently producing modern and user-friendly designs that exceed expectations. His back-end integration skills are outstanding.",
-    letterUrl: null,
-    icon: "🌐",
-    color: "from-emerald-500/10 to-transparent",
-    border: "hover:border-emerald-500/40",
-    tag: "border-emerald-500/20 text-emerald-400",
-  },
 ];
 
 export default function References() {
@@ -59,7 +33,7 @@ export default function References() {
           people who can confirm i&apos;m not making this up
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid gap-6 max-w-md">
           {references.map((ref, i) => (
             <motion.div
               key={ref.org}

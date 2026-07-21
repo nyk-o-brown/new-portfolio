@@ -7,6 +7,7 @@ import Certifications from "@/components/Certifications";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import SystemDesign from "@/components/SystemDesign";
+import References from "@/components/References";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <SystemDesign />
+        <References />
         <Contact />
       </main>
       <Footer />
