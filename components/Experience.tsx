@@ -21,7 +21,7 @@ const experiences = [
   },
   {
     num: "02",
-    role: "Team Lead / Full Stack Developer",
+    role: "CTO / Full Stack Developer",
     company: "Lixnet Technologies",
     period: "Sep 2025 – Jan 2026",
     location: "Nairobi, Kenya",
